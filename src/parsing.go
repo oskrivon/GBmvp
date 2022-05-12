@@ -211,6 +211,7 @@ func parsingDataFromClient(data []string) []byte {
 	fmt.Println("raw data from client >>>> ", data)
 
 	result = append(result, []byte(data[0])...)
+	fmt.Println("id sensor >>>> ", data[0])
 	data = data[1:]
 	fmt.Println("data from client >>>> ", data)
 

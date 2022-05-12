@@ -279,7 +279,7 @@ class GasBench(QtWidgets.QMainWindow):
                     number_of_gas = j
             settings[i * 11] = str(number_of_gas)
 
-        xxx = [(self.gui.humidity_2.text())]
+        xxx = [str(self.gui.humidity_2.text()).encode('utf-8')]
         print(type((self.gui.humidity_2.text().encode('utf-8'))))
 
         xxx.extend(settings)
