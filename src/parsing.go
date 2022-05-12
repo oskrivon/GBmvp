@@ -210,6 +210,7 @@ func parsingDataFromClient(data []string) []byte {
 
 	result = append(result, []byte(data[0])...)
 	data = data[1:]
+	fmt.Println("data from client >>>> ", data)
 
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 11; j++ {
