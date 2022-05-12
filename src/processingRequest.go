@@ -75,7 +75,7 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 			fmt.Print("some error")
 		}
 
-		time.Sleep(3 * time.Second)
+		time.Sleep(1 * time.Second)
 		gaFlag = false
 
 	case "get_ga":
@@ -86,7 +86,7 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 
 		result, _ = parseResponse(response, "get ga options")
 
-		time.Sleep(3 * time.Second)
+		time.Sleep(1 * time.Second)
 		gaFlag = false
 
 	case "set_ga":
@@ -108,7 +108,7 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 
 		result = "ok"
 
-		time.Sleep(3 * time.Second)
+		time.Sleep(1 * time.Second)
 		gaFlag = false
 
 	case "get_ppm":
@@ -121,7 +121,7 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 		}
 
 		fmt.Println(result)
-		time.Sleep(3 * time.Second)
+		time.Sleep(1 * time.Second)
 		gaFlag = false
 
 	case "clean_air":
