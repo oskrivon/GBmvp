@@ -264,6 +264,8 @@ func parsingDataFromClient(data []string) []byte {
 		}
 	}
 
+	fmt.Println("parsed client data >>>> ", result)
+
 	return result
 }
 
