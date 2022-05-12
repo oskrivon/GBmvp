@@ -108,7 +108,7 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 
 		result = "ok"
 
-		time.Sleep(1 * time.Second)
+		time.Sleep(5 * time.Second)
 		gaFlag = false
 
 	case "get_ppm":

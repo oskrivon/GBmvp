@@ -139,7 +139,7 @@ class GasBench(QtWidgets.QMainWindow):
 
         timer3 = QtCore.QTimer(self)
         timer3.timeout.connect(self.get_flow)
-        timer3.start(1000)
+        timer3.start(10000)
 
         timer4 = QtCore.QTimer(self)
         timer4.timeout.connect(self.get_ppm)
