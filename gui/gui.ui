@@ -860,7 +860,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_8">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0,0,0,0,0,0,0">
+         <layout class="QVBoxLayout" name="verticalLayout_10" stretch="0,0,0,0,0,0,0,0">
           <item>
            <widget class="QLabel" name="label_11">
             <property name="font">
@@ -970,6 +970,18 @@
            </widget>
           </item>
           <item>
+           <widget class="QPushButton" name="CloseAir">
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Закрыть</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <spacer name="verticalSpacer_2">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
@@ -1062,7 +1074,7 @@
           </property>
           <row>
            <property name="text">
-            <string>ГЧВ</string>
+            <string>ПГС</string>
            </property>
           </row>
           <row>
@@ -1072,7 +1084,7 @@
           </row>
           <row>
            <property name="text">
-            <string>ПГС</string>
+            <string>ГЧВ</string>
            </property>
           </row>
           <row>

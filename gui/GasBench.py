@@ -149,7 +149,7 @@ class GasBench(QtWidgets.QMainWindow):
 
         timer5 = QtCore.QTimer(self)
         timer5.timeout.connect(self.log_update)
-        timer5.start(60000)
+        timer5.start(40000)
 
         self.my_signal.connect(self.raw_printing, QtCore.Qt.QueuedConnection)
 
@@ -164,6 +164,7 @@ class GasBench(QtWidgets.QMainWindow):
         self.gui.average_calc.clicked.connect(self.average_calculation)
         self.gui.SetGasType.clicked.connect(self.set_gas_type)
         self.gui.CleanAir.clicked.connect(self.clean_air)
+        self.gui.CloseAir.clicked.connect(self.close_air)
 
         self.curve = []
         self.timer_graph = [[], [], [], []]
@@ -220,9 +221,12 @@ class GasBench(QtWidgets.QMainWindow):
         self.send_to_server("get_flow", "")
 
     def clean_air(self):
-        send_string = str(0) + " " + str(1) + "|"
+        send_string = str(1) + " " + str(0) + "|"
         self.send_to_server("set_flow", send_string)
-        #self.send_to_server("clean_air", "")
+
+    def close_air(self):
+        send_string = str(0) + " " + str(0) + "|"
+        self.send_to_server("set_flow", send_string)
 
     def get_ppm(self):
         self.send_to_server("get_ppm", "")

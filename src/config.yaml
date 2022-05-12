@@ -19,5 +19,5 @@ flowController:
  parityMode:      0
  interCharacterTimeout: 1
 
-fcID1: 0x02
-fcID2: 0x03
+fcID1: 0x03
+fcID2: 0x02
