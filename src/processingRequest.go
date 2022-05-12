@@ -104,6 +104,8 @@ func processingClientRequest(request string, wg *sync.WaitGroup) string {
 			responseLenght: 0,
 		}
 
+		fmt.Println("new settings >>>>> ", withCRC)
+
 		_ =  currentSystem.gasAnalyzer.sendCommand(newCommand, 0)
 
 		result = "ok"
